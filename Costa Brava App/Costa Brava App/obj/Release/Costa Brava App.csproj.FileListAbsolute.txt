@@ -1,0 +1,15 @@
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\Bin\Release\ApplicationIcon.png
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\Bin\Release\Background.png
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\Bin\Release\Costa Brava App.dll
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\Bin\Release\Costa Brava App.pdb
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\Bin\Release\AppManifest.xaml
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\Bin\Release\Costa_Brava_App.xap
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\Bin\Release\Microsoft.Phone.Controls.dll
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\Bin\Release\Microsoft.Phone.Controls.xml
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\obj\Release\ResolveAssemblyReference.cache
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\obj\Release\App.g.i.cs
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\obj\Release\MainPage.g.i.cs
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\obj\Release\Costa Brava App.g.resources
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\obj\Release\Costa Brava App.dll
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\obj\Release\Costa Brava App.pdb
+D:\Visual Studio 2010\Projects\Costa Brava App\Costa Brava App\obj\Release\XapCacheFile.xml

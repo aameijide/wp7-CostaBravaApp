@@ -1,0 +1,592 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Costa_Brava_App.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+ 
+        <!--Control Panorama-->
+        <controls:Panorama Title="Costa Brava App">
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="PanoramaBackground.png"/>
+            </controls:Panorama.Background>
+ 
+            <!--Elemento Panorama uno-->
+            <controls:PanoramaItem Header="Begur">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="begur" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Aiguablava"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Aiguafreda"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Fonda"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Fornells"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="L'illa Roja"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Racó"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sa Riera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sa Tuna"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+ 
+            <!--Elemento Panorama dos-->
+            <!--Use 'Orientation="Horizontal"' para habilitar un panel que dispuesto horizontalmente-->
+            <controls:PanoramaItem Header="Blanes">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="blanes" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Blanes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Punta de Santa Anna"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="S'Abanell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sant Francesc"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Treumal"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama tres-->
+            <controls:PanoramaItem Header="Cadaqués">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="cadaques" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Bona"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Caials"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Culip"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Es Poal"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Fredosa"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Gran"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Guillola"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Jugadora"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Llané Gran"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Port Alguer" />
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Portlligat" />
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Ros" />
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="S'Alqueria" />
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sa Conca" />
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Ses Oliveres" />
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama cuatro-->
+            <controls:PanoramaItem Header="Calella de&#13;Palafrugell">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="calella" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Calau"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Canadell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Golfet"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Banyera de la Russa / d'Massoni"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Platgeta"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Marquesa"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Port Bo"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Port de la Mala Espina"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Port Pelegrí"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sant Roc /&#13; dels Canyers"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama cinco-->
+            <controls:PanoramaItem Header="Calonge">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="calonge" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Belladona"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Can Cristus -&#13; Ses Torretes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Cap Roig"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Comtat Sant Jordi"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Es Monestri"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Les Torretes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Roques Planes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sant Antoni"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Torre Valentina"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama seis-->
+            <controls:PanoramaItem Header="Colera">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="colera" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Borró / Assutzenes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Colera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Garbet"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Morts / d'en Goixa"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Rovellada"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama siete-->
+            <controls:PanoramaItem Header="El port de&#13;la Selva">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="port" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Cativa"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="El Pas"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Fornells"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Galladera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="L'Erola"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Ribera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Port de la Vall"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Prona"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Tamariua"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Tavallera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama ocho-->
+            <controls:PanoramaItem Header="Empuriabrava">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="empuriabrava" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Can Comes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Empuriabrava"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Rubina"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama nueve-->
+            <controls:PanoramaItem Header="L'escala">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="escala" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Illa Mateua"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="L'escala"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Creu"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Les Muscleres"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Moll Grec"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Montgó"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Port d'en Perris"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Portitxol"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Rec del Molí"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Riells"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Riuet"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sant Martí d'Empúries"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+            
+            <!--Elemento Panorama diez-->
+            <controls:PanoramaItem Header="L'estartit">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="estartit" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="L'estarit"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Gola"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Pletera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Mas Pinell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+
+            <!--Elemento Panorama once-->
+            <controls:PanoramaItem Header="Llafranc">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="llafranc" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="El Cau"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Llafranc"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama doce-->
+            <controls:PanoramaItem Header="Llançà">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="llanca" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Bramant"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Canyelles"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Cros"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="El Cau del Llop"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="El Port"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Gifreu"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Farella"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Gola"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Les Carboneres"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Les Tonyines"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Rastell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Tavallera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama trece-->
+            <controls:PanoramaItem Header="Lloret de Mar">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="lloret" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Cala Canyelles"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Fenals"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Lloret de Mar"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sa Boadella"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Santa Cristina"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Treumal"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama catorce-->
+            <controls:PanoramaItem Header="Montràs">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="montras" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Crit"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Font Morisca"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Vedell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama quince-->
+            <controls:PanoramaItem Header="Palamós">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="palamos" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Caleta del Morro&#13; del Vedell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Canyers"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Cap de Planes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Castell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Corbs"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Estreta"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Gran de Palamós"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Fosca"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Margarida"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Platgeta de&#13; sa Tamardia"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Pots"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Remendon"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Roca Bona"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="S'Alguer"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sa Corbetera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sanià"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama dieciseis-->
+            <controls:PanoramaItem Header="Pals">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="pals" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Gran de Pals"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Grau"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama diecisiete-->
+            <controls:PanoramaItem Header="Platja d'Aro">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="platja" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Dels Canyers"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="El Pi"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Platja Gran"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Rovira"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sa Cova"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama dieciocho-->
+            <controls:PanoramaItem Header="Portbou">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="portbou" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="El Clapé"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="El Pi"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Les Freses"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Les Tres Platgetes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Portbou"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama diecinueve-->
+            <controls:PanoramaItem Header="Roses">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="roses" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Almadrava"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Bonifaci"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Calís"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Calitjàs"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Canadell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Canyelles"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="El Rastrell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Jòncols"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Nova"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Punta"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Montjoi"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Murtra"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Palangrers"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Pelosa"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Rustella"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Salatar"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Santa Margarida"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama veinte-->
+            <controls:PanoramaItem Header="S'agaró">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="sagaro" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Pedrosa"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="S'Agaró"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sa Conca"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama veintiuno-->
+            <controls:PanoramaItem Header="Sant Feliu&#13;de Guíxols">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="stfeliu" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Ametller"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Can Dell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Canyerets"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Jonca"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Maset"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Peix"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Port Salvi"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sa Caleta"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sant Feliu"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sant Pol"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Urgell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Vigatà"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama veintidos-->
+            <controls:PanoramaItem Header="Sant Pere&#13;Pescador">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="pere" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="La Gola"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Txarranca"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Les Dunes"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Sant Pere"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama veintitres-->
+            <controls:PanoramaItem Header="Santa&#13;Cristina d'Aro">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="cristina" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Caleta de Cuncagats"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="El Senyor Ramon"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Joana"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Font"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Vallpresona"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama veinticuatro-->
+            <controls:PanoramaItem Header="Tamariu">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="tamariu" Margin="0,0,0,0">
+                    <TextBlock Width="450" FontSize="42" Text="Aigua Dolça"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Aigua Xellida"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Lliris"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Pedrosa"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Tamariu"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+            <!--Elemento Panorama vinticinco-->
+            <controls:PanoramaItem Header="Tossa de Mar">
+                <!--Lista de líneas dobles con ajuste de texto-->
+                <ListBox Name="tossa" Margin="0,0,0,0">	
+                    <TextBlock Width="450" FontSize="42" Text="Bona"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Carles"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="D'es Codolar"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="El Reig"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Figuera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Futadera"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Giverola"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Gran de Tossa de Mar"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="La Mar Menuda"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                    <TextBlock Width="450" FontSize="42" Text="Llevadó"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Morisca"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Pola"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Porto Pi"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Salions"/>
+                    <TextBlock Width="450" FontSize="22" Text="Cala"/>
+                    <TextBlock Width="450" FontSize="42" Text="Santa Maria de Llorell"/>
+                    <TextBlock Width="450" FontSize="22" Text="Platja"/>
+                </ListBox>
+            </controls:PanoramaItem>
+
+        </controls:Panorama>
+    </Grid>
+</phone:PhoneApplicationPage>
